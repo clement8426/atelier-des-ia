@@ -1,0 +1,11 @@
+node_modules/
+out/
+release/
+test-results/
+playwright-report/
+.test-data/
+.env*
+!.env.example
+*.log
+resources/registry-downloads/
+public/runtime/

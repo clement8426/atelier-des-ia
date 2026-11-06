@@ -1,0 +1,16 @@
+import sharp from "sharp";
+import { writeFile } from "node:fs/promises";
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#f2f1e8"/><g transform="translate(90 90) rotate(-7 160 160)"><rect width="145" height="145" rx="36" fill="#b94625"/><circle cx="247" cy="72" r="72" fill="#d6a05a"/><path d="M0 180h109q36 0 36 36v109H36q-36 0-36-36z" fill="#3c6b51"/><rect x="175" y="180" width="145" height="145" rx="22" fill="#7c90b1"/></g></svg>`;
+await writeFile("resources/icon.svg", svg);
+await sharp(Buffer.from(svg)).png().toFile("resources/icon.png");
+const png = await sharp(Buffer.from(svg)).resize(256, 256).png().toBuffer();
+const header = Buffer.alloc(22);
+header.writeUInt16LE(1, 2);
+header.writeUInt16LE(1, 4);
+header[6] = 0;
+header[7] = 0;
+header.writeUInt16LE(1, 10);
+header.writeUInt16LE(32, 12);
+header.writeUInt32LE(png.length, 14);
+header.writeUInt32LE(22, 18);
+await writeFile("resources/icon.ico", Buffer.concat([header, png]));

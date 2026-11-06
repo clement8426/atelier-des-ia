@@ -1,0 +1,70 @@
+[
+  {
+    "id": "classification",
+    "elapsedMs": 824,
+    "ok": true,
+    "measurement": {
+      "appVersion": "0.1.0",
+      "modelRevision": "d36eea8c3298d339c232581dff18beed6651eacd607d0a531b7bdb100f8dc713:697bd60337931e54bd8d58b6ef8b587de6d97c59241940810d4759e25e9885bc:21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:03:04.589Z",
+      "loadMs": 395.21000000089407,
+      "inferenceMs": 27.31499999947846,
+      "totalMs": 566,
+      "peakAppMb": 625,
+      "passed": true
+    }
+  },
+  {
+    "id": "ocr",
+    "elapsedMs": 2506,
+    "ok": true,
+    "measurement": {
+      "appVersion": "0.1.0",
+      "modelRevision": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8:3ac018be6f97499a08faa3bbdeb33640968d9307f6736d152902747a9f259593:9ef676d6ed3c88256a2d92c640c44f25b0c40947e111b14b8be8f594091563e6:66170210bad538e83fff3c4a3867e547d6bf20b50d64b20347c4b913f3034ea1",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:03:06.868Z",
+      "loadMs": 1389.1749999988824,
+      "inferenceMs": 574.2400000002235,
+      "totalMs": 2094,
+      "peakAppMb": 1021,
+      "passed": true
+    }
+  },
+  {
+    "id": "speech",
+    "elapsedMs": 4659,
+    "ok": true,
+    "measurement": {
+      "appVersion": "0.1.0",
+      "modelRevision": "641d1ab097da2b81128c076810edb052b385decc8be3381814802a64a73baf99:39479916c2db192b5ac9764daddd0c744d83e023ad890c6976c0633ae4df8959:bd8b8d079d4d3d2c4cc20345889bbcd586d72f021a132f93357a763eb5232cce",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:03:10.965Z",
+      "loadMs": 2347.464999999851,
+      "inferenceMs": 871.035000000149,
+      "totalMs": 3392,
+      "peakAppMb": 874,
+      "passed": true
+    }
+  },
+  {
+    "id": "ocr",
+    "elapsedMs": 2359,
+    "ok": true,
+    "measurement": {
+      "appVersion": "0.1.0",
+      "modelRevision": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8:3ac018be6f97499a08faa3bbdeb33640968d9307f6736d152902747a9f259593:9ef676d6ed3c88256a2d92c640c44f25b0c40947e111b14b8be8f594091563e6:66170210bad538e83fff3c4a3867e547d6bf20b50d64b20347c4b913f3034ea1",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:03:14.084Z",
+      "loadMs": 1405.4199999999255,
+      "inferenceMs": 603.9199999999255,
+      "totalMs": 2137,
+      "peakAppMb": 982,
+      "passed": true
+    }
+  }
+]

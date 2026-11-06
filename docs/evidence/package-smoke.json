@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-06T12:46:53.474Z",
+  "status": "blocked-by-device-guard",
+  "artifact": "release/0.1.0/Atelier-des-IA-0.1.0-Windows.exe",
+  "reason": "Windows refuse le lancement de l’exécutable empaqueté : stratégie Device Guard de votre organisation.",
+  "sourceIntegrationTests": "passed",
+  "finalPackagedRuntimeValidated": false,
+  "installerTested": false,
+  "cleanWindowsMachineTested": false,
+  "previousSuccessfulIntermediate": "package-smoke-intermediaire.json"
+}

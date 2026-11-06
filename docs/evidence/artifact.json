@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "artifact": "release/0.1.0/Atelier-des-IA-0.1.0-Windows.exe",
+  "bytes": 147566453,
+  "sha256": "eae19f59f9bd65de29cdbf7adaedb7f6467eac3dc30297e258d2dd520dac8002",
+  "signed": false,
+  "packagedLaunch": "blocked-by-Device-Guard",
+  "sourceTests": "11 unit tests and Electron integration passed"
+}

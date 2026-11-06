@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "modules": [
+    {
+      "id": "classification",
+      "name": "MobileNetV3 Small",
+      "files": [
+        {
+          "file": "model.onnx",
+          "url": "https://huggingface.co/onnx-community/mobilenetv3_small_100.lamb_in1k/resolve/b1a19675d33130739e56503b5bfd6534a0f9e01d/onnx/model.onnx",
+          "bytes": 10204519,
+          "sha256": "d36eea8c3298d339c232581dff18beed6651eacd607d0a531b7bdb100f8dc713",
+          "repository": "onnx-community/mobilenetv3_small_100.lamb_in1k",
+          "revision": "b1a19675d33130739e56503b5bfd6534a0f9e01d",
+          "license": "Apache-2.0 (timm)"
+        },
+        {
+          "file": "config.json",
+          "url": "https://huggingface.co/onnx-community/mobilenetv3_small_100.lamb_in1k/resolve/b1a19675d33130739e56503b5bfd6534a0f9e01d/config.json",
+          "bytes": 69803,
+          "sha256": "697bd60337931e54bd8d58b6ef8b587de6d97c59241940810d4759e25e9885bc",
+          "repository": "onnx-community/mobilenetv3_small_100.lamb_in1k",
+          "revision": "b1a19675d33130739e56503b5bfd6534a0f9e01d",
+          "license": "Apache-2.0 (timm)"
+        },
+        {
+          "file": "preprocessor_config.json",
+          "url": "https://huggingface.co/onnx-community/mobilenetv3_small_100.lamb_in1k/resolve/b1a19675d33130739e56503b5bfd6534a0f9e01d/preprocessor_config.json",
+          "bytes": 441,
+          "sha256": "21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+          "repository": "onnx-community/mobilenetv3_small_100.lamb_in1k",
+          "revision": "b1a19675d33130739e56503b5bfd6534a0f9e01d",
+          "license": "Apache-2.0 (timm)"
+        }
+      ]
+    },
+    {
+      "id": "ocr",
+      "name": "PP-OCRv6 Tiny",
+      "files": [
+        {
+          "file": "det.onnx",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx/resolve/2ba1506c0380b8f0b03dd142459aac66d4421f6c/inference.onnx",
+          "bytes": 1780590,
+          "sha256": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8",
+          "repository": "PaddlePaddle/PP-OCRv6_tiny_det_onnx",
+          "revision": "2ba1506c0380b8f0b03dd142459aac66d4421f6c",
+          "license": "Apache-2.0"
+        },
+        {
+          "file": "det.yml",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx/resolve/2ba1506c0380b8f0b03dd142459aac66d4421f6c/inference.yml",
+          "bytes": 883,
+          "sha256": "3ac018be6f97499a08faa3bbdeb33640968d9307f6736d152902747a9f259593",
+          "repository": "PaddlePaddle/PP-OCRv6_tiny_det_onnx",
+          "revision": "2ba1506c0380b8f0b03dd142459aac66d4421f6c",
+          "license": "Apache-2.0"
+        },
+        {
+          "file": "rec.onnx",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec_onnx/resolve/2612ab37152ae0a677521bae4e1e3d4fb4cf7c30/inference.onnx",
+          "bytes": 4462639,
+          "sha256": "9ef676d6ed3c88256a2d92c640c44f25b0c40947e111b14b8be8f594091563e6",
+          "repository": "PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+          "revision": "2612ab37152ae0a677521bae4e1e3d4fb4cf7c30",
+          "license": "Apache-2.0"
+        },
+        {
+          "file": "rec.yml",
+          "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_rec_onnx/resolve/2612ab37152ae0a677521bae4e1e3d4fb4cf7c30/inference.yml",
+          "bytes": 55571,
+          "sha256": "66170210bad538e83fff3c4a3867e547d6bf20b50d64b20347c4b913f3034ea1",
+          "repository": "PaddlePaddle/PP-OCRv6_tiny_rec_onnx",
+          "revision": "2612ab37152ae0a677521bae4e1e3d4fb4cf7c30",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "id": "speech",
+      "name": "Piper · Siwis",
+      "files": [
+        {
+          "file": "voice.onnx",
+          "url": "https://huggingface.co/rhasspy/piper-voices/resolve/e7229f7d33a10e145e109b886d661984201ac3c4/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx",
+          "bytes": 63201294,
+          "sha256": "641d1ab097da2b81128c076810edb052b385decc8be3381814802a64a73baf99",
+          "repository": "rhasspy/piper-voices",
+          "revision": "e7229f7d33a10e145e109b886d661984201ac3c4",
+          "license": "Voix Siwis : voir MODEL_CARD, données CC-BY-4.0"
+        },
+        {
+          "file": "voice.json",
+          "url": "https://huggingface.co/rhasspy/piper-voices/resolve/e7229f7d33a10e145e109b886d661984201ac3c4/fr/fr_FR/siwis/medium/fr_FR-siwis-medium.onnx.json",
+          "bytes": 4875,
+          "sha256": "39479916c2db192b5ac9764daddd0c744d83e023ad890c6976c0633ae4df8959",
+          "repository": "rhasspy/piper-voices",
+          "revision": "e7229f7d33a10e145e109b886d661984201ac3c4",
+          "license": "Voix Siwis : voir MODEL_CARD, données CC-BY-4.0"
+        },
+        {
+          "file": "MODEL_CARD",
+          "url": "https://huggingface.co/rhasspy/piper-voices/resolve/e7229f7d33a10e145e109b886d661984201ac3c4/fr/fr_FR/siwis/medium/MODEL_CARD",
+          "bytes": 284,
+          "sha256": "bd8b8d079d4d3d2c4cc20345889bbcd586d72f021a132f93357a763eb5232cce",
+          "repository": "rhasspy/piper-voices",
+          "revision": "e7229f7d33a10e145e109b886d661984201ac3c4",
+          "license": "Voix Siwis : voir MODEL_CARD, données CC-BY-4.0"
+        }
+      ]
+    }
+  ]
+}

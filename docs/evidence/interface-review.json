@@ -1,0 +1,25 @@
+{
+  "contract": "../INTERFACE.md — interface française pour débutants, calcul réel, préparation explicite, annulation et aide. Inspection locale des captures Electron.",
+  "targetViewports": ["1440x900", "900x720", "600x800"],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Axe sans violation sur sept vues (accessibility.json et accessibility-pages.json). Navigation Tab, focus visible sur home-600.png ; labels et boutons vérifiés. Réduction des transitions testée. Ne constitue pas un audit complet avec lecteur d’écran."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Captures 1440, 900 et 600 inspectées. Les cartes deviennent horizontales à 600 et les ateliers s’empilent. Pas de défilement horizontal lors des assertions 900/600."
+  },
+  "contentStates": {
+    "loading": { "status": "pass", "evidence": "loading-1440.png : vérification, progression et Annuler visibles ; interface de calcul indépendante." },
+    "empty": { "status": "pass", "evidence": "Atelier sans modèle : taille annoncée et Télécharger et tester. Le résultat n’est pas rempli par une simulation." },
+    "error": { "status": "pass", "evidence": "error-1440.png : perte réseau provoquée, explication française et réessai accessibles." },
+    "partial": { "status": "pass", "evidence": "partial-1440.png : suppression du modèle de vision ; les deux autres ateliers restent prêts. Réimport du pack validé ensuite." },
+    "success": { "status": "pass", "evidence": "classification-1440.png, ocr-1440.png et speech-1440.png : sorties réellement calculées, temps mesurés et prochaine action." },
+    "permission": { "status": "not-applicable", "reason": "Le socle ne prend aucune image caméra ni son microphone. Exemples fournis et texte saisi ; aucune permission de capteur demandée." }
+  },
+  "renderedEvidence": [
+    { "viewport": "1440x900", "artifact": "home-1440.png", "observation": "Trois ateliers et leurs images locales ; hiérarchie et textes sans superposition." },
+    { "viewport": "900x720", "artifact": "home-900.png", "observation": "Navigation compacte, trois cartes lisibles et aucune largeur excessive." },
+    { "viewport": "600x800", "artifact": "home-600.png", "observation": "Cartes sur une colonne, illustrations à gauche, focus visible et lecture verticale." }
+  ]
+}

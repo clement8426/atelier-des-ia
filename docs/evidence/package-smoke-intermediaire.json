@@ -1,0 +1,53 @@
+{
+  "application": {
+    "packaged": true,
+    "version": "0.1.0",
+    "platform": "win32",
+    "data": "C:\\Users\\Clem\\AppData\\Roaming\\atelier-des-ia"
+  },
+  "bundledFiles": 68,
+  "devAssetsExcluded": true,
+  "measurements": [
+    {
+      "id": "classification",
+      "appVersion": "0.1.0",
+      "modelRevision": "d36eea8c3298d339c232581dff18beed6651eacd607d0a531b7bdb100f8dc713:697bd60337931e54bd8d58b6ef8b587de6d97c59241940810d4759e25e9885bc:21bb2bccbd790ded22ca9ac77758578bae4d90d8fc578a612097bd38e9d40b2f",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:29:35.595Z",
+      "loadMs": 439.5,
+      "inferenceMs": 34.99500000104308,
+      "totalMs": 632,
+      "peakAppMb": 622,
+      "passed": true
+    },
+    {
+      "id": "ocr",
+      "appVersion": "0.1.0",
+      "modelRevision": "193bab7a04fca699a6c82e6abb5b81bdb28177f0abd4062552b04908dafb19f8:3ac018be6f97499a08faa3bbdeb33640968d9307f6736d152902747a9f259593:9ef676d6ed3c88256a2d92c640c44f25b0c40947e111b14b8be8f594091563e6:66170210bad538e83fff3c4a3867e547d6bf20b50d64b20347c4b913f3034ea1",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:29:37.957Z",
+      "loadMs": 1550.344999998808,
+      "inferenceMs": 617.320000000298,
+      "totalMs": 2302,
+      "peakAppMb": 1036,
+      "passed": true
+    },
+    {
+      "id": "speech",
+      "appVersion": "0.1.0",
+      "modelRevision": "641d1ab097da2b81128c076810edb052b385decc8be3381814802a64a73baf99:39479916c2db192b5ac9764daddd0c744d83e023ad890c6976c0633ae4df8959:bd8b8d079d4d3d2c4cc20345889bbcd586d72f021a132f93357a763eb5232cce",
+      "runtime": "ONNX Runtime Web 1.31.1 / WASM CPU · Electron 45.2.3",
+      "platform": "win32 x64",
+      "at": "2026-11-06T12:29:41.769Z",
+      "loadMs": 2381.8149999994785,
+      "inferenceMs": 955.054999999702,
+      "totalMs": 3502,
+      "peakAppMb": 884,
+      "passed": true
+    }
+  ],
+  "installerTested": false,
+  "cleanWindowsMachineTested": false
+}

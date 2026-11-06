@@ -1,0 +1,102 @@
+{
+  "name": "atelier-des-ia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Découvrir les IA en les essayant, sur son ordinateur.",
+  "author": "Le Labo Numérique",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "build": "npm run assets && npm run typecheck && electron-vite build",
+    "assets": "node scripts/prepare-assets.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm test",
+    "package:win": "npm run build && electron-builder --win nsis --x64",
+    "package:dir": "npm run build && electron-builder --dir",
+    "package:mac": "npm run build && electron-builder --mac",
+    "package:linux": "npm run build && electron-builder --linux",
+    "models:registry": "node scripts/update-registry.mjs",
+    "models:fixtures": "node scripts/fetch-test-models.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "build": {
+    "appId": "ch.labonumerique.atelierdesia",
+    "productName": "Atelier des IA",
+    "directories": {
+      "output": "release/0.1.0"
+    },
+    "files": [
+      "out/**/*",
+      "resources/**/*",
+      "package.json",
+      "LICENSE",
+      "THIRD-PARTY-NOTICES.md",
+      "!resources/registry-downloads/**/*",
+      "docs/MEDIAS.md",
+      "docs/VALIDATION.md"
+    ],
+    "win": {
+      "target": "nsis",
+      "signExecutable": false,
+      "icon": "resources/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "packElevateHelper": false,
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "Atelier-des-IA-${version}-Windows.${ext}"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education",
+      "icon": "resources/icon.png"
+    },
+    "extraFiles": [
+      {
+        "from": "scripts/Nettoyer les donnees.cmd",
+        "to": "Nettoyer les donnees.cmd"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@diffusionstudio/piper-wasm": "1.0.0",
+    "@paddleocr/paddleocr-js": "0.4.2",
+    "@playwright/test": "1.65.0",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0",
+    "electron-vite": "6.0.0",
+    "lucide-react": "1.70.0",
+    "onnxruntime-web": "1.31.1",
+    "prettier": "3.9.10",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "0.35.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.6",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "minimatch": "11.0.5"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
