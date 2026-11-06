@@ -2,6 +2,8 @@
 
 **Découvrez plusieurs intelligences artificielles en les essayant sur votre ordinateur.**
 
+**Prototype en validation : ce dépôt contient le code et la documentation. Aucune version installable n’est encore publiée sur GitHub.** Consultez [l’état des essais](docs/VALIDATION.md) avant une utilisation en cours.
+
 Pas de compte, pas de clé à créer, pas de commande à saisir. Les calculs utilisent votre ordinateur. Vos contenus ne sont pas envoyés à un service d’IA.
 
 Cette première version propose trois expériences :
@@ -40,7 +42,7 @@ Les ateliers ont des limites : une catégorie peut être fausse, un caractère m
 
 ## Installation et disponibilité
 
-Version **0.1.0 — prototype local**. L’installateur Windows est disponible dans `release/0.1.0/Atelier-des-IA-0.1.0-Windows.exe` (environ 148 Mo). La copie locale non installée est dans `release/0.1.0/win-unpacked/Atelier des IA.exe` ; ce dossier doit rester complet.
+Version **0.1.0 — prototype local**. Un installateur Windows d’environ 148 Mo a été construit localement. Il n’est pas inclus dans ce dépôt et n’est pas encore proposé en téléchargement. Les dossiers de compilation et les modèles téléchargés sont exclus de Git.
 
 Les trois ateliers fonctionnent avec le runtime Electron de développement. Sur ce poste, la dernière version empaquetée est bloquée au lancement par la politique Windows Device Guard : une signature valide ou une autorisation informatique adaptée est nécessaire. Aucune protection du poste n’a été modifiée. Aucune page de téléchargement publique n’est publiée ; la signature, les licences restantes et l’installation sur postes propres doivent être validées avant diffusion aux apprenants.
 
